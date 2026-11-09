@@ -42,3 +42,12 @@
 .atelier-hero .scroll-cue{z-index:2}
 @media(min-width:768px) and (max-width:1100px){.atelier-hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;min-height:760px;padding-top:145px}.atelier-hero .hero-copy{width:100%}.atelier-hero .lifestyle-photo{width:100%;inset:auto}}
 @media(max-width:767px){.atelier-hero{grid-template-columns:minmax(0,1fr);gap:26px;min-height:0;padding-top:145px;padding-bottom:65px}.atelier-hero .hero-copy{width:100%;padding:0 10px}.atelier-hero .lifestyle-photo{width:min(100%,520px);justify-self:end;inset:auto}.atelier-hero::before{background:none}.atelier-home .atelier-header::before{background:rgba(246,240,229,.65)}}
+
+/* Extend the background, preserving the photo's existing grid width and ratio. */
+.atelier-hero{background:linear-gradient(100deg,#f6f0e5 0%,#f6f0e5 40%,#f2e3d2 78%,#f6f0e5 100%)}
+.atelier-home .atelier-header::before{background:linear-gradient(90deg,rgba(246,240,229,.97) 0%,rgba(246,240,229,.93) 45%,rgba(242,227,210,.92) 78%,rgba(246,240,229,.96) 100%)}
+.hero-photo-canvas{position:relative;width:100%;aspect-ratio:1423/1105;isolation:isolate}
+.hero-photo-canvas::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#f6f0e5 0%,rgba(246,240,229,.82) 3%,rgba(246,240,229,0) 17%),linear-gradient(180deg,#f2e3d2 0%,rgba(242,227,210,.8) 2%,rgba(242,227,210,0) 14%),linear-gradient(0deg,#f2e3d2 0%,rgba(242,227,210,0) 12%),linear-gradient(270deg,#f2e3d2 0%,rgba(242,227,210,0) 8%)}
+.atelier-hero::before{background:linear-gradient(90deg,#f6f0e5 0%,#f6f0e5 38%,rgba(246,240,229,.8) 45%,rgba(246,240,229,.18) 53%,rgba(246,240,229,0) 62%)}
+.atelier-hero .lifestyle-photo{justify-self:end}
+@media(max-width:767px){.atelier-hero{background:linear-gradient(160deg,#f6f0e5 0%,#f6f0e5 55%,#f2e3d2 86%,#f6f0e5 100%)}.atelier-hero::before{background:none}.hero-photo-canvas::after{background:linear-gradient(90deg,#f6f0e5 0%,rgba(246,240,229,0) 12%),linear-gradient(180deg,#f2e3d2 0%,rgba(242,227,210,0) 12%),linear-gradient(0deg,#f2e3d2 0%,rgba(242,227,210,0) 12%)}}
