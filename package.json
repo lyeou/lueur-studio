@@ -1,0 +1,10 @@
+{
+  "name": "lueur-studio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Buildless Lueur Studio website for GitHub Pages",
+  "scripts": {
+    "lint": "node --check site/homepage.js && python3 scripts/check_site.py",
+    "build": "python3 scripts/build_site.py"
+  }
+}
