@@ -2,6 +2,8 @@
 from pathlib import Path
 import shutil
 from check_site import check
+from version_assets import version_assets
+version_assets()
 check()
 root=Path(__file__).resolve().parents[1]
 out=root/'work/build/site'
