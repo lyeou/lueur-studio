@@ -58,9 +58,9 @@ def check():
     for required in ['The Joy of','Making.','让日常，生出喜欢。','A Little Joy, Made by You.','Explore Workshops','id="workshops"','id="shop"','id="story"','id="next"','id="saved-ideas"']:
         assert required in home, required
     assert home.count('class="arch-card"')==4
-    assert 'Real Lueur photography coming soon' in home
+    assert 'homepage-hero-image' in home and 'fetchpriority="high"' in home
     assert 'Bookings are not yet open' in home
-    assert len(docs[SITE/'index.html'].images)==2, 'Only official logo imagery is available'
+    assert len(docs[SITE/'index.html'].images)==3, 'Homepage should contain two logos and one lifestyle image'
     print(f'PASS: {len(docs)} HTML pages, tags, IDs, anchors, scripts, images, stylesheets and homepage content/status checks.')
     return True
 if __name__=='__main__': check()
