@@ -60,7 +60,8 @@ def check():
     assert home.count('class="arch-card"')==4
     assert 'homepage-hero-image' in home and 'fetchpriority="high"' in home
     assert 'Bookings are not yet open' in home
-    assert len(docs[SITE/'index.html'].images)==3, 'Homepage should contain two logos and one lifestyle image'
+    assert len(docs[SITE/'index.html'].images)==7, 'Homepage should contain two logos, one hero image and four category images'
+    assert home.count('class="workshop-cutout"')==4, 'All four categories need their own images'
     print(f'PASS: {len(docs)} HTML pages, tags, IDs, anchors, scripts, images, stylesheets and homepage content/status checks.')
     return True
 if __name__=='__main__': check()
