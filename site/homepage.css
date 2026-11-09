@@ -29,24 +29,16 @@
 @media(max-width:1100px){.lifestyle-photo{min-height:0}}
 @media(max-width:767px){.lifestyle-photo{min-height:0;margin:0}.homepage-hero-image{width:100%;height:auto}}
 
-/* One continuous masthead: photo on the right, cream space on the left. */
+/* Continuous cream masthead with an explicitly sized, visible right-hand photo. */
 .atelier-home .atelier-header{position:absolute;top:0;left:0;right:0;width:100%;background:transparent;isolation:isolate}
 .atelier-home .atelier-header::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(246,240,229,.96),rgba(246,240,229,.75) 65%,rgba(246,240,229,.35))}
-.atelier-hero{display:flex;align-items:center;min-height:max(760px,100svh);padding-top:160px;padding-bottom:100px;overflow:hidden;background:var(--canvas)}
-.atelier-hero .hero-copy{width:min(560px,46%);padding:22px 12px;flex-shrink:0}
-.atelier-hero .lifestyle-photo{position:absolute;inset:0 0 0 auto;width:70%;height:100%;margin:0;z-index:-2;overflow:hidden}
-.atelier-hero .homepage-hero-image{width:100%;height:100%;object-fit:cover;object-position:48% center}
-.atelier-hero::before{inset:0;z-index:-1;background:linear-gradient(90deg,#f6f0e5 0%,#f6f0e5 30%,rgba(246,240,229,.98) 36%,rgba(246,240,229,.91) 42%,rgba(246,240,229,.55) 51%,rgba(246,240,229,.12) 61%,rgba(246,240,229,0) 72%),linear-gradient(0deg,rgba(246,240,229,.98),rgba(246,240,229,0) 18%)}
-.atelier-hero .lifestyle-photo figcaption{position:absolute;right:24px;bottom:18px;max-width:340px;width:auto;padding:8px 14px;background:rgba(246,240,229,.94);font-size:11px;color:var(--ink);text-align:center}
+.atelier-hero{display:grid;grid-template-columns:minmax(0,46fr) minmax(0,54fr);gap:20px;align-items:center;min-height:max(760px,100svh);padding-top:160px;padding-bottom:90px;overflow:hidden;background:var(--canvas)}
+.atelier-hero .hero-copy{width:100%;max-width:560px;min-width:0;padding:22px 12px;z-index:2}
+.atelier-hero .lifestyle-photo{position:relative;inset:auto;align-self:center;width:100%;height:auto;min-height:0;margin:0;z-index:0;display:block;overflow:visible;aspect-ratio:auto}
+.atelier-hero .homepage-hero-image{display:block;width:100%;height:auto;max-height:none;aspect-ratio:1423/1105;object-fit:contain;object-position:center}
+.atelier-hero::before{inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#f6f0e5 0%,#f6f0e5 39%,rgba(246,240,229,.7) 46%,rgba(246,240,229,.1) 54%,rgba(246,240,229,0) 63%)}
+.atelier-hero .lifestyle-photo figcaption{position:static;inset:auto;width:100%;max-width:none;padding:12px 8px 0;background:transparent;font-size:11px;color:var(--ink);text-align:center}
 .atelier-hero .lifestyle-photo figcaption small{font-size:9px}
 .atelier-hero .scroll-cue{z-index:2}
-@media(min-width:768px) and (max-width:1100px){.atelier-hero{min-height:max(790px,100svh);padding-top:150px}.atelier-hero .hero-copy{width:50%}.atelier-hero .lifestyle-photo{width:75%}.atelier-hero .homepage-hero-image{object-position:48% center}}
-@media(max-width:767px){.atelier-hero{min-height:max(820px,100svh);align-items:flex-start;padding-top:145px;padding-bottom:210px}.atelier-hero .hero-copy{width:100%;padding:0 10px}.atelier-hero .lifestyle-photo{width:100%}.atelier-hero .homepage-hero-image{object-position:42% center}.atelier-hero::before{background:linear-gradient(180deg,rgba(246,240,229,.97) 0%,rgba(246,240,229,.96) 48%,rgba(246,240,229,.76) 62%,rgba(246,240,229,.18) 82%,rgba(246,240,229,.93) 100%)}.atelier-home .atelier-header::before{background:rgba(246,240,229,.65)}.atelier-hero .lifestyle-photo figcaption{right:16px;left:16px;bottom:44px;max-width:none;font-size:10px}.atelier-hero .scroll-cue{bottom:0}}
-
-/* Smaller right-side composition: show the full photo instead of cover-cropping. */
-.atelier-hero .lifestyle-photo{inset:125px 1.5% 65px auto;width:51%;height:auto;display:block}
-.atelier-hero .homepage-hero-image{width:100%;height:100%;object-fit:contain;object-position:right center}
-.atelier-hero::before{background:linear-gradient(90deg,#f6f0e5 0%,#f6f0e5 43%,rgba(246,240,229,.92) 48%,rgba(246,240,229,.35) 56%,rgba(246,240,229,0) 66%),linear-gradient(0deg,rgba(246,240,229,.9),rgba(246,240,229,0) 15%)}
-.atelier-hero .lifestyle-photo figcaption{right:12px;bottom:0;max-width:340px}
-@media(min-width:768px) and (max-width:1100px){.atelier-hero .lifestyle-photo{inset:145px 1% 85px auto;width:49%}.atelier-hero .homepage-hero-image{object-fit:contain;object-position:right center}}
-@media(max-width:767px){.atelier-hero{display:flex;flex-direction:column;align-items:stretch;min-height:0;gap:24px;padding-top:145px;padding-bottom:65px}.atelier-hero .hero-copy{width:100%}.atelier-hero .lifestyle-photo{position:relative;inset:auto;align-self:flex-end;width:min(100%,520px);height:auto;aspect-ratio:1423/1105;margin:0;z-index:0}.atelier-hero .homepage-hero-image{width:100%;height:100%;object-fit:contain;object-position:right center}.atelier-hero::before{background:var(--canvas)}.atelier-hero .lifestyle-photo figcaption{right:8px;left:8px;bottom:0;padding:6px 8px;font-size:10px}}
+@media(min-width:768px) and (max-width:1100px){.atelier-hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;min-height:760px;padding-top:145px}.atelier-hero .hero-copy{width:100%}.atelier-hero .lifestyle-photo{width:100%;inset:auto}}
+@media(max-width:767px){.atelier-hero{grid-template-columns:minmax(0,1fr);gap:26px;min-height:0;padding-top:145px;padding-bottom:65px}.atelier-hero .hero-copy{width:100%;padding:0 10px}.atelier-hero .lifestyle-photo{width:min(100%,520px);justify-self:end;inset:auto}.atelier-hero::before{background:none}.atelier-home .atelier-header::before{background:rgba(246,240,229,.65)}}
