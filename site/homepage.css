@@ -68,3 +68,10 @@ html{scroll-padding-top:140px}
 .atelier-home .atelier-menu nav{top:100%;max-height:calc(100dvh - 140px);overflow-y:auto;overscroll-behavior:contain}
 .atelier-home .skip:focus{position:fixed;z-index:110}
 @media(max-width:767px){html{scroll-padding-top:120px}.atelier-home .atelier-menu nav{max-height:calc(100dvh - 120px)}}
+
+/* Owner-requested English calligraphy, confined to the homepage hero title. */
+@font-face{font-family:"Lueur Hero Script";src:url("./public/fonts/great-vibes-hero.woff") format("woff");font-style:normal;font-weight:400;font-display:swap}
+.atelier-home #hero-heading{font-family:"Lueur Hero Script",Georgia,serif;font-weight:400;font-style:normal;font-size:clamp(76px,7.3vw,110px);line-height:1.15;letter-spacing:0;font-synthesis:none;padding:.05em .08em .1em;overflow:visible}
+@media(min-width:768px) and (max-width:1100px){.atelier-home #hero-heading{font-size:70px}}
+@media(max-width:767px){.atelier-home #hero-heading{font-size:72px;line-height:1.16}}
+@media(max-width:359px){.atelier-home #hero-heading{font-size:60px}}
