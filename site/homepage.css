@@ -75,3 +75,13 @@ html{scroll-padding-top:140px}
 @media(min-width:768px) and (max-width:1100px){.atelier-home #hero-heading{font-size:70px}}
 @media(max-width:767px){.atelier-home #hero-heading{font-size:72px;line-height:1.16}}
 @media(max-width:359px){.atelier-home #hero-heading{font-size:60px}}
+
+/* Larger proportional logo and smaller navigation aligned to the right. */
+.atelier-home .atelier-header{grid-template-columns:170px minmax(0,1fr) auto;gap:26px;min-height:140px}
+.atelier-home .header .brand{width:160px;height:120px;max-width:100%}
+.atelier-home .header .brand-logo{width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain}
+.atelier-home .atelier-nav{justify-content:flex-end;gap:26px}
+.atelier-home .atelier-nav a{font-size:17px}
+html{scroll-padding-top:160px}
+@media(max-width:1100px){.atelier-home .atelier-header{grid-template-columns:minmax(0,1fr) auto;gap:18px}.atelier-home .atelier-nav{display:none}.atelier-home .header-actions{justify-self:end}.atelier-home .atelier-menu nav{max-height:calc(100dvh - 160px)}}
+@media(max-width:767px){.atelier-home .atelier-header{min-height:112px;gap:12px}.atelier-home .header .brand{width:125px;height:92px}html{scroll-padding-top:132px}.atelier-home .atelier-menu nav{max-height:calc(100dvh - 132px)}}
