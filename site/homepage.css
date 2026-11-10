@@ -98,6 +98,6 @@ html{scroll-padding-top:160px}
 
 /* Stretch the transparent flourish slightly wider than the hero lettering. */
 .atelier-home .hero-flourish-rail{--ornament-height:120px;position:relative;container-type:inline-size;display:block;left:auto;top:auto;bottom:auto;width:104%;max-width:none;height:var(--ornament-height);margin:8px -2% 16px;overflow:visible;pointer-events:none;user-select:none;opacity:1}
-.atelier-home .hero-flourish-rail::before{content:"";position:absolute;width:var(--ornament-height);height:100cqw;left:calc(50% - var(--ornament-height)/2);top:calc(var(--ornament-height)/2 - 50cqw);background:url("./public/images/floral-stars-flourish.webp") center/100% 100% no-repeat;transform:rotate(90deg);transform-origin:center;filter:url(#flourish-fine-lines)}
+.atelier-home .hero-flourish-rail::before{content:"";position:absolute;width:var(--ornament-height);height:100cqw;left:calc(50% - var(--ornament-height)/2);top:calc(var(--ornament-height)/2 - 50cqw);background:url("./public/images/floral-stars-no-large-flower.webp") center/100% 100% no-repeat;transform:rotate(90deg);transform-origin:center;filter:url(#flourish-fine-lines)}
 .atelier-home .hero-flourish-rail .hero-flower{display:none}
 @media(max-width:767px){.atelier-home .hero-flourish-rail{--ornament-height:80px;margin-top:4px;margin-bottom:12px}}
