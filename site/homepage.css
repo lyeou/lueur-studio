@@ -109,3 +109,9 @@ html{scroll-padding-top:160px}
 @media(max-width:767px){.hero-flourish-rail{left:-22px;top:0;bottom:0;height:auto;width:38px;aspect-ratio:auto;opacity:.65}.hero-flourish-rail::before{background-size:100% auto;transform:rotate(-10deg) scale(.85)}}
 
 .atelier-home .hero-copy > :not(.hero-flourish-rail){position:relative;z-index:1}
+
+/* A single fine-line ornament aligned between the heading and studio explanation. */
+.atelier-home .hero-flourish-rail{top:var(--flourish-top,70px);height:var(--flourish-height,65%);bottom:auto;width:auto;aspect-ratio:240/598}
+.atelier-home .hero-flourish-rail::before{background-size:contain;transform:rotate(-10deg);filter:url(#flourish-fine-lines)}
+
+@media(min-width:768px) and (max-width:1100px){.atelier-home .hero-flourish-rail{left:-30px}}
