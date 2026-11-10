@@ -101,9 +101,11 @@ html{scroll-padding-top:160px}
 @media(min-width:768px) and (max-width:1100px){.atelier-home .hero-flower{width:58px;height:180px}}
 @media(max-width:767px){.atelier-home .hero-flower{left:-6px;top:56px;width:45px;height:145px;transform:rotate(-10deg)}}
 
-/* One transparent ornament, vertically centred along the left of the hero. */
-.hero-flourish-rail{position:absolute;left:8px;top:148px;bottom:12px;width:clamp(86px,7vw,112px);overflow:visible;z-index:2;pointer-events:none;user-select:none}
-.hero-flourish-rail::before{content:"";position:absolute;inset:0;background-image:url("./public/images/floral-stars-flourish.webp");background-size:100% auto;background-position:center;background-repeat:no-repeat;transform:rotate(-10deg);transform-origin:center}
+/* Match one proportional flourish to the full text block, from eyebrow to CTA. */
+.hero-flourish-rail{position:absolute;left:clamp(-118px,-7vw,-80px);top:22px;bottom:auto;height:calc(100% - 48px);width:auto;aspect-ratio:240/598;overflow:visible;z-index:0;pointer-events:none;user-select:none}
+.hero-flourish-rail::before{content:"";position:absolute;inset:0;background-image:url("./public/images/floral-stars-flourish.webp");background-size:contain;background-position:center;background-repeat:no-repeat;transform:rotate(-10deg);transform-origin:center}
 .atelier-home .hero-flourish-rail .hero-flower{display:none}
-@media(min-width:768px) and (max-width:1100px){.hero-flourish-rail{left:0;width:58px;top:145px}}
-@media(max-width:767px){.hero-flourish-rail{left:0;width:30px;top:132px;bottom:20px;opacity:.75}.hero-flourish-rail::before{transform:rotate(-10deg)}}
+@media(min-width:768px) and (max-width:1100px){.hero-flourish-rail{left:-110px;opacity:.8}}
+@media(max-width:767px){.hero-flourish-rail{left:-22px;top:0;bottom:0;height:auto;width:38px;aspect-ratio:auto;opacity:.65}.hero-flourish-rail::before{background-size:100% auto;transform:rotate(-10deg)}}
+
+.atelier-home .hero-copy > :not(.hero-flourish-rail){position:relative;z-index:1}
