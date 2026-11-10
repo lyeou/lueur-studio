@@ -103,5 +103,5 @@ html{scroll-padding-top:160px}
 @media(max-width:767px){.atelier-home .hero-flourish-rail{height:80px;margin-top:4px;margin-bottom:12px}}
 
 /* Widen only the hero lettering and shift it gently right. */
-.atelier-home #hero-heading{transform:translateX(12px) scaleX(1.05);transform-origin:center}
-@media(max-width:1100px){.atelier-home #hero-heading{transform:translateX(4px) scaleX(1.05)}}
+.atelier-home #hero-heading{transform:translateX(calc(12px + 30%)) scaleX(1.05);transform-origin:center}
+@media(max-width:767px){.atelier-home #hero-heading{transform:translateX(4px) scaleX(1.05)}}
