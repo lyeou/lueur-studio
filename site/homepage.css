@@ -95,3 +95,8 @@ html{scroll-padding-top:160px}
 /* Bound cutouts to the arch independently of each image's intrinsic dimensions. */
 .atelier-home .arch-media .workshop-cutout{position:absolute;inset:52px 14px 22px;width:calc(100% - 28px);height:calc(100% - 74px);z-index:0}
 @media(max-width:767px){.atelier-home .arch-media .workshop-cutout{inset:34px 8px 16px;width:calc(100% - 16px);height:calc(100% - 50px)}}
+
+/* Transparent floral-and-star ornament, tilted gently beside the hero title. */
+.atelier-home .hero-flower{width:86px;height:225px;object-fit:contain;transform:rotate(-10deg);transform-origin:center;pointer-events:none;user-select:none}
+@media(min-width:768px) and (max-width:1100px){.atelier-home .hero-flower{width:58px;height:180px}}
+@media(max-width:767px){.atelier-home .hero-flower{left:-6px;top:56px;width:45px;height:145px;transform:rotate(-10deg)}}
