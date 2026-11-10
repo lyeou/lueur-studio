@@ -101,9 +101,9 @@ html{scroll-padding-top:160px}
 @media(min-width:768px) and (max-width:1100px){.atelier-home .hero-flower{width:58px;height:180px}}
 @media(max-width:767px){.atelier-home .hero-flower{left:-6px;top:56px;width:45px;height:145px;transform:rotate(-10deg)}}
 
-/* A tall, gently tilted ornamental strip running along the first screen. */
-.hero-flourish-rail{position:absolute;left:0;top:148px;bottom:12px;width:clamp(86px,8vw,120px);overflow:hidden;z-index:2;pointer-events:none;user-select:none;-webkit-mask-image:linear-gradient(180deg,transparent,#000 4%,#000 96%,transparent);mask-image:linear-gradient(180deg,transparent,#000 4%,#000 96%,transparent)}
-.hero-flourish-rail::before{content:"";position:absolute;inset:-35px -7px;background-image:url("./public/images/floral-stars-flourish.webp");background-size:100% auto;background-repeat:repeat-y;transform:rotate(-14deg);transform-origin:center}
+/* One transparent ornament, vertically centred along the left of the hero. */
+.hero-flourish-rail{position:absolute;left:8px;top:148px;bottom:12px;width:clamp(86px,7vw,112px);overflow:visible;z-index:2;pointer-events:none;user-select:none}
+.hero-flourish-rail::before{content:"";position:absolute;inset:0;background-image:url("./public/images/floral-stars-flourish.webp");background-size:100% auto;background-position:center;background-repeat:no-repeat;transform:rotate(-10deg);transform-origin:center}
 .atelier-home .hero-flourish-rail .hero-flower{display:none}
-@media(min-width:768px) and (max-width:1100px){.hero-flourish-rail{left:-12px;width:65px;top:145px}}
-@media(max-width:767px){.hero-flourish-rail{left:-10px;width:34px;top:132px;bottom:20px;opacity:.75}.hero-flourish-rail::before{inset:-20px -2px;transform:rotate(-12deg)}}
+@media(min-width:768px) and (max-width:1100px){.hero-flourish-rail{left:0;width:58px;top:145px}}
+@media(max-width:767px){.hero-flourish-rail{left:0;width:30px;top:132px;bottom:20px;opacity:.75}.hero-flourish-rail::before{transform:rotate(-10deg)}}
