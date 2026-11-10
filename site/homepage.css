@@ -96,22 +96,8 @@ html{scroll-padding-top:160px}
 .atelier-home .arch-media .workshop-cutout{position:absolute;inset:52px 14px 22px;width:calc(100% - 28px);height:calc(100% - 74px);z-index:0}
 @media(max-width:767px){.atelier-home .arch-media .workshop-cutout{inset:34px 8px 16px;width:calc(100% - 16px);height:calc(100% - 50px)}}
 
-/* Transparent floral-and-star ornament, tilted gently beside the hero title. */
-.atelier-home .hero-flower{width:86px;height:225px;object-fit:contain;transform:rotate(-10deg);transform-origin:center;pointer-events:none;user-select:none}
-@media(min-width:768px) and (max-width:1100px){.atelier-home .hero-flower{width:58px;height:180px}}
-@media(max-width:767px){.atelier-home .hero-flower{left:-6px;top:56px;width:45px;height:145px;transform:rotate(-10deg)}}
-
-/* Match one proportional flourish to the full text block, from eyebrow to CTA. */
-.hero-flourish-rail{position:absolute;left:clamp(-118px,-7vw,-80px);top:22px;bottom:auto;height:calc(100% - 48px);width:auto;aspect-ratio:240/598;overflow:visible;z-index:0;pointer-events:none;user-select:none}
-.hero-flourish-rail::before{content:"";position:absolute;inset:0;background-image:url("./public/images/floral-stars-flourish.webp");background-size:contain;background-position:center;background-repeat:no-repeat;transform:rotate(-10deg) scale(.85);transform-origin:center}
+/* One transparent floral-star flourish replaces the curves below the title. */
+.atelier-home .hero-flourish-rail{position:relative;display:block;left:auto;top:auto;bottom:auto;width:70%;max-width:300px;height:auto;aspect-ratio:598/240;margin:8px auto 16px;overflow:visible;pointer-events:none;user-select:none;opacity:1}
+.atelier-home .hero-flourish-rail::before{content:"";position:absolute;width:40.134%;height:249.167%;left:29.933%;top:-74.583%;background:url("./public/images/floral-stars-flourish.webp") center/contain no-repeat;transform:rotate(90deg);transform-origin:center;filter:url(#flourish-fine-lines)}
 .atelier-home .hero-flourish-rail .hero-flower{display:none}
-@media(min-width:768px) and (max-width:1100px){.hero-flourish-rail{left:-110px;opacity:.8}}
-@media(max-width:767px){.hero-flourish-rail{left:-22px;top:0;bottom:0;height:auto;width:38px;aspect-ratio:auto;opacity:.65}.hero-flourish-rail::before{background-size:100% auto;transform:rotate(-10deg) scale(.85)}}
-
-.atelier-home .hero-copy > :not(.hero-flourish-rail){position:relative;z-index:1}
-
-/* A single fine-line ornament aligned between the heading and studio explanation. */
-.atelier-home .hero-flourish-rail{top:var(--flourish-top,70px);height:var(--flourish-height,65%);bottom:auto;width:auto;aspect-ratio:240/598}
-.atelier-home .hero-flourish-rail::before{background-size:contain;transform:translateX(21%) rotate(-10deg) scale(.7);filter:url(#flourish-fine-lines)}
-
-@media(min-width:768px) and (max-width:1100px){.atelier-home .hero-flourish-rail{left:-30px}}
+@media(max-width:767px){.atelier-home .hero-flourish-rail{width:65%;max-width:220px;margin:4px auto 12px}}
