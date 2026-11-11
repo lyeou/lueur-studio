@@ -57,6 +57,7 @@ def check():
     home=(SITE/'index.html').read_text()
     for required in ['The Joy of','Making.','A Little Joy, Made by You.','Explore Workshops','id="workshops"','id="shop"','id="story"','id="next"','id="saved-ideas"']:
         assert required in home, required
+    assert 'id="about"' in home and home.count('class="about-topic"')==4, 'About Us must group all four topics'
     assert home.count('class="arch-card"')==4
     assert 'homepage-hero-image' in home and 'fetchpriority="high"' in home
     assert 'Bookings are not yet open' in home
