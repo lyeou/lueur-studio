@@ -200,7 +200,7 @@ html{scroll-padding-top:118px}
 .workshop-dots button{border:0;background:transparent;min-width:36px;width:36px;display:grid;place-items:center}
 .workshop-dots span{width:9px;height:9px;border:1.5px solid #806f60;border-radius:50%}
 .workshop-dots [aria-pressed=true] span{width:24px;border-color:#a86a36;background:#a86a36;border-radius:6px}
-.workshop-controls .workshop-play{font-size:17px}
+
 @media(max-width:767px){
 .workshop-carousel .arch-card{grid-template-columns:1fr;padding:26px 24px;gap:26px;border-radius:20px}
 .workshop-tag{margin-bottom:24px;font-size:11px}
