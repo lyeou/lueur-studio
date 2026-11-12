@@ -255,3 +255,7 @@ html{scroll-padding-top:118px}
 .atelier-home.about-page .about-topic h2{font-size:clamp(28px,2.7vw,38px);line-height:1.18;letter-spacing:-.6px;margin-bottom:20px}
 .about-page .about-steps h3{font:italic 21px/1.3 Georgia,serif;margin:0 0 6px}
 @media(max-width:767px){.about-page main{padding-top:78.4px}.atelier-home #about-heading{font-size:30px;margin-bottom:28px}}
+
+/* Studio section label matches the compact uppercase reference. */
+.atelier-home #about-heading{font:700 14px/1.5 Arial,sans-serif;letter-spacing:2.8px;color:var(--ink);margin:0 0 28px;text-transform:uppercase}
+@media(max-width:767px){.atelier-home #about-heading{font-size:12px;letter-spacing:2.2px;margin-bottom:24px}}
