@@ -167,3 +167,13 @@ html{scroll-padding-top:118px}
 
 /* A little more length, preserving the ornament's original proportions and center. */
 .atelier-home .hero-flourish-rail .hero-flower{transform:scale(1.15);transform-origin:center}
+
+/* Give each line more breathing room within the existing first-screen layout. */
+.atelier-home #hero-heading{line-height:1.12;margin-bottom:8px}
+.atelier-home .hero-copy .eyebrow{margin-bottom:14px}
+.atelier-home .hero-flourish-rail{margin-top:6px;margin-bottom:12px}
+.atelier-home .hero-motto{margin-bottom:12px}
+.atelier-home .studio-explanation{line-height:1.8;margin-bottom:10px}
+.atelier-home .hero-buttons .button{margin-top:12px}
+@media(max-width:767px){.atelier-home #hero-heading{line-height:1.14}.atelier-home .hero-flourish-rail{margin-top:4px;margin-bottom:10px}.atelier-home .hero-motto{margin-bottom:10px}.atelier-home .studio-explanation{line-height:1.7}}
+@media(max-width:767px) and (max-height:740px){.atelier-home .atelier-hero .lifestyle-photo{width:clamp(140px,calc((100svh - 572px)*1.28778),100%)}}
