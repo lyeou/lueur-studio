@@ -122,3 +122,18 @@ html{scroll-padding-top:160px}
 .about-steps h4{font:italic 21px/1.3 Georgia,serif;margin:0 0 6px}
 .about-steps p{margin-bottom:0}
 @media(max-width:767px){.about-topics{grid-template-columns:1fr;gap:28px}.about-us > h2{margin-bottom:28px}.about-topic{scroll-margin-top:132px}.about-topic p{font-size:16px}}
+
+/* Compact fixed navigation: visual dimensions reduced by 30%, with usable hit targets. */
+.atelier-home .atelier-header{min-height:98px;grid-template-columns:119px minmax(0,1fr) auto;gap:18.2px;padding-top:6.5px;padding-bottom:6.5px;align-items:center}
+.atelier-home .header .brand{width:119px;height:84px}
+.atelier-home .atelier-nav{gap:18.2px}
+.atelier-home .atelier-nav a{font-size:13.3px;min-height:44px;padding:8.4px 0}
+.atelier-home .header-actions{gap:8.4px;align-items:center}
+.atelier-home .icon-control{width:44px;height:44px}
+.atelier-home .icon-control svg{width:20.3px;height:20.3px}
+.atelier-home .atelier-menu summary{display:flex}
+.atelier-home .atelier-menu nav{max-height:calc(100dvh - 118px)}
+html{scroll-padding-top:118px}
+.atelier-home .about-topic{scroll-margin-top:118px}
+@media(max-width:1100px){.atelier-home .atelier-header{grid-template-columns:minmax(0,1fr) auto;gap:12.6px}.atelier-home .atelier-nav{display:none}}
+@media(max-width:767px){.atelier-home .atelier-header{min-height:78.4px;gap:8.4px}.atelier-home .header .brand{width:87.5px;height:64.4px}.atelier-home .header-actions{gap:2.8px}.atelier-home .icon-control svg{width:17.5px;height:17.5px}.atelier-home .atelier-menu nav{max-height:calc(100dvh - 99px)}html{scroll-padding-top:99px}.atelier-home .about-topic{scroll-margin-top:99px}}
