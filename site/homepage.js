@@ -41,3 +41,43 @@
     if (menu?.open && !menu.contains(event.target)) menu.open = false;
   });
 })();
+
+(() => {
+  const carousel = document.querySelector('.workshop-carousel');
+  const controls = document.querySelector('.workshop-controls');
+  if (!carousel || !controls) return;
+  const slides = [...carousel.querySelectorAll('.arch-card')];
+  const dots = [...controls.querySelectorAll('[data-slide]')];
+  const play = controls.querySelector('.workshop-play');
+  const status = document.getElementById('workshop-slide-status');
+  let current = 0;
+  let timer;
+  const show = index => {
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => { slide.hidden = i !== current; });
+    dots.forEach((dot, i) => dot.setAttribute('aria-pressed', String(i === current)));
+    status.textContent = `${current + 1} of ${slides.length}: ${slides[current].querySelector('h3').textContent}`;
+  };
+  const stop = () => {
+    clearInterval(timer); timer = undefined;
+    play.textContent = '▶︎'; play.setAttribute('aria-label', 'Play workshop slideshow');
+    play.setAttribute('aria-pressed', 'false');
+  };
+  controls.hidden = false;
+  show(0);
+  dots.forEach(dot => dot.addEventListener('click', () => { stop(); show(Number(dot.dataset.slide)); }));
+  controls.querySelectorAll('[data-slide-step]').forEach(button => button.addEventListener('click', () => { stop(); show(current + Number(button.dataset.slideStep)); }));
+  play.addEventListener('click', () => {
+    if (timer) { stop(); return; }
+    play.textContent = 'Ⅱ'; play.setAttribute('aria-label', 'Pause workshop slideshow');
+    play.setAttribute('aria-pressed', 'true');
+    timer = setInterval(() => show(current + 1), 6000);
+  });
+  carousel.addEventListener('focusin', stop);
+  carousel.addEventListener('pointerenter', stop);
+  document.addEventListener('visibilitychange', () => { if (document.hidden) stop(); });
+  document.querySelectorAll('a[href^="#idea-"]').forEach(link => link.addEventListener('click', () => {
+    const index = slides.findIndex(slide => `#${slide.id}` === link.getAttribute('href'));
+    if (index >= 0) { stop(); show(index); }
+  }));
+})();
