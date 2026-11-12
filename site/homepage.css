@@ -164,3 +164,6 @@ html{scroll-padding-top:118px}
 /* Lift only the short studio introduction above the hero title. */
 .atelier-home .hero-copy .eyebrow{position:relative;top:-12px}
 @media(max-width:767px){.atelier-home .hero-copy .eyebrow{top:-8px}}
+
+/* A little more length, preserving the ornament's original proportions and center. */
+.atelier-home .hero-flourish-rail .hero-flower{transform:scale(1.15);transform-origin:center}
