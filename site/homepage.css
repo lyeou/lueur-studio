@@ -139,3 +139,8 @@ html{scroll-padding-top:118px}
 @media(max-width:767px){.atelier-home .atelier-header{min-height:78.4px;gap:8.4px}.atelier-home .header .brand{width:87.5px;height:64.4px}.atelier-home .header-actions{gap:2.8px}.atelier-home .icon-control svg{width:23.1px;height:23.1px}.atelier-home .atelier-menu nav{max-height:calc(100dvh - 99px)}html{scroll-padding-top:99px}.atelier-home .about-topic{scroll-margin-top:99px}}
 
 .atelier-home .atelier-menu nav a{font-weight:400}
+
+/* Close the excess space left by the former taller fixed header. */
+.atelier-home .atelier-hero{padding-top:118px;min-height:max(718px,calc(100svh - 42px))}
+@media(min-width:768px) and (max-width:1100px){.atelier-home .atelier-hero{padding-top:118px;min-height:733px}}
+@media(max-width:767px){.atelier-home .atelier-hero{padding-top:103px;min-height:0}}
