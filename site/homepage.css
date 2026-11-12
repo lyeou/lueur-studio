@@ -266,3 +266,7 @@ html{scroll-padding-top:118px}
 /* Increase only the homepage studio heading by 30 percent. */
 .atelier-home:not(.about-page) #about-heading{font-size:clamp(44.2px,4.16vw,57.2px)}
 @media(max-width:767px){.atelier-home:not(.about-page) #about-heading{font-size:41.6px}}
+
+/* Homepage studio title follows the same responsive size as Coasters. */
+.atelier-home:not(.about-page) #about-heading{font-size:clamp(32px,3.7vw,48px)}
+@media(max-width:767px){.atelier-home:not(.about-page) #about-heading{font-size:34px}}
