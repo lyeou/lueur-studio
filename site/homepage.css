@@ -284,3 +284,6 @@ html{scroll-padding-top:118px}
 .atelier-home:not(.about-page) .studio-introduction-lead{font:italic clamp(36px,4.3vw,58px)/1.12 Georgia,'Times New Roman',serif;letter-spacing:-1.5px;margin:0 auto 36px;max-width:850px}
 .atelier-home:not(.about-page) .studio-introduction>p:not(.studio-introduction-lead){font-size:18px;line-height:1.75;max-width:68ch}
 @media(max-width:767px){.atelier-home:not(.about-page) #about-heading{font-size:11px;letter-spacing:2px}.atelier-home:not(.about-page) .studio-introduction-lead{font-size:36px;margin-bottom:28px}.atelier-home:not(.about-page) .studio-introduction>p:not(.studio-introduction-lead){font-size:16px}}
+
+.atelier-home:not(.about-page) .studio-introduction-lead{font-size:clamp(25.2px,3.01vw,40.6px);max-width:none;white-space:nowrap;letter-spacing:-1.05px}
+@media(max-width:767px){.atelier-home:not(.about-page) .studio-introduction-lead{font-size:min(25.2px,4vw);letter-spacing:-.4px}}
