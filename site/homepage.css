@@ -277,3 +277,10 @@ html{scroll-padding-top:118px}
 .studio-introduction p{max-width:68ch;margin:0 auto;font-size:18px;line-height:1.8}
 .studio-introduction .studio-introduction-lead{font:italic 30px/1.4 Georgia,serif;max-width:none;margin-bottom:24px}
 @media(max-width:767px){.studio-introduction{padding-top:24px}.studio-introduction p{font-size:16px;line-height:1.75}.studio-introduction .studio-introduction-lead{font-size:25px;margin-bottom:20px}}
+
+/* Homepage studio introduction uses the centered editorial update hierarchy. */
+.atelier-home:not(.about-page) #about-heading{font:600 11px/1.65 Arial,Helvetica,sans-serif;letter-spacing:2px;margin-bottom:28px}
+.atelier-home:not(.about-page) .studio-introduction{max-width:900px;border:0;padding-top:0}
+.atelier-home:not(.about-page) .studio-introduction-lead{font:italic clamp(36px,4.3vw,58px)/1.12 Georgia,'Times New Roman',serif;letter-spacing:-1.5px;margin:0 auto 36px;max-width:850px}
+.atelier-home:not(.about-page) .studio-introduction>p:not(.studio-introduction-lead){font-size:18px;line-height:1.75;max-width:68ch}
+@media(max-width:767px){.atelier-home:not(.about-page) #about-heading{font-size:11px;letter-spacing:2px}.atelier-home:not(.about-page) .studio-introduction-lead{font-size:36px;margin-bottom:28px}.atelier-home:not(.about-page) .studio-introduction>p:not(.studio-introduction-lead){font-size:16px}}
