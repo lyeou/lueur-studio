@@ -270,3 +270,10 @@ html{scroll-padding-top:118px}
 /* Homepage studio title follows the same responsive size as Coasters. */
 .atelier-home:not(.about-page) #about-heading{font-size:clamp(32px,3.7vw,48px)}
 @media(max-width:767px){.atelier-home:not(.about-page) #about-heading{font-size:34px}}
+
+/* Center the owner's concise studio introduction on the homepage. */
+.atelier-home:not(.about-page) .about-us{text-align:center}
+.studio-introduction{max-width:760px;margin:0 auto;padding-top:30px;border-top:1px solid var(--line)}
+.studio-introduction p{max-width:68ch;margin:0 auto;font-size:18px;line-height:1.8}
+.studio-introduction .studio-introduction-lead{font:italic 30px/1.4 Georgia,serif;max-width:none;margin-bottom:24px}
+@media(max-width:767px){.studio-introduction{padding-top:24px}.studio-introduction p{font-size:16px;line-height:1.75}.studio-introduction .studio-introduction-lead{font-size:25px;margin-bottom:20px}}
