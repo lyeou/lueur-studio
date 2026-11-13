@@ -55,8 +55,9 @@ def check():
                 stack.pop()
         assert not stack, f'{p}: missing closing brace'
     home=(SITE/'index.html').read_text()
-    for required in ['The Joy of','Making.','A Little Joy, Made by You.','Explore Workshops','id="workshops"','id="next"']:
+    for required in ['The Joy of','Making.','A Little Joy, Made by You.','Explore Workshops','id="workshops"']:
         assert required in home, required
+    assert 'id="next"' not in home and (SITE/'whats-next.html').exists(), 'Upcoming content must have its own page'
     assert 'id="about"' in home and 'Find joy in making the everyday your own.' in home, 'Homepage studio introduction required'
     assert (SITE/'about.html').read_text().count('class="about-topic"')==4, 'About page must preserve all four topics'
     assert home.count('class="arch-card"')==4

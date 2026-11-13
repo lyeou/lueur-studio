@@ -336,3 +336,7 @@ html{scroll-padding-top:118px}
 .about-page #shop>*,.about-page #story>*{justify-self:end}
 .about-page #shop p,.about-page #story p{margin-left:auto}
 .about-page #shop .status{justify-self:end}
+
+.next-page #next>h1{font-size:clamp(40px,5vw,64px);line-height:1.15;letter-spacing:-1px}
+.next-page .next-list h2{font-size:27px;line-height:1.25;letter-spacing:-.5px;margin-bottom:12px}
+@media(max-width:767px){.next-page .next-list h2{font-size:25px;margin-bottom:0}}
