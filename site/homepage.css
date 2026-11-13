@@ -287,3 +287,9 @@ html{scroll-padding-top:118px}
 
 .atelier-home:not(.about-page) .studio-introduction-lead{font-size:clamp(25.2px,3.01vw,40.6px);max-width:none;white-space:nowrap;letter-spacing:-1.05px}
 @media(max-width:767px){.atelier-home:not(.about-page) .studio-introduction-lead{font-size:min(25.2px,4vw);letter-spacing:-.4px}}
+
+.shop-introduction{text-align:center;min-height:65svh}
+.shop-introduction h1{font-size:clamp(40px,5vw,64px);line-height:1.15;letter-spacing:-1px}
+.shop-introduction>p:not(.eyebrow){max-width:58ch;margin:0 auto 20px;font-size:17px}
+.shop-introduction .shop-status{display:table;font:600 12px/1.5 Arial,sans-serif;letter-spacing:1.5px;text-transform:uppercase;border:1px solid var(--line);padding:7px 16px}
+@media(max-width:359px){.atelier-home .atelier-header{padding-inline:14px;gap:4px}.atelier-home .header .brand{width:76px}}
