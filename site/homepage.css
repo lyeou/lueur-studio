@@ -323,3 +323,10 @@ html{scroll-padding-top:118px}
 .booking-review{border:0;cursor:pointer;font:inherit}
 .booking-result{max-width:70ch;font-weight:600}
 @media(max-width:767px){.booking-fields{grid-template-columns:1fr}.calendar-event dl{grid-template-columns:1fr}.calendar-intro>h1{font-size:40px}}
+
+/* Place Collection and Story together on the right half of About Us. */
+@media(min-width:768px){
+.about-page #shop>*,.about-page #story>*{grid-column:7 / 13}
+.about-page #shop p,.about-page #story p{max-width:100%}
+.about-page #shop .status{width:fit-content;justify-self:start}
+}
