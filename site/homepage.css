@@ -330,3 +330,9 @@ html{scroll-padding-top:118px}
 .about-page #shop p,.about-page #story p{max-width:100%}
 .about-page #shop .status{width:fit-content;justify-self:start}
 }
+
+/* Right-align the complete Collection and Story content groups. */
+.about-page #shop,.about-page #story{text-align:right}
+.about-page #shop>*,.about-page #story>*{justify-self:end}
+.about-page #shop p,.about-page #story p{margin-left:auto}
+.about-page #shop .status{justify-self:end}
