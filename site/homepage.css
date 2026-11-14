@@ -360,3 +360,12 @@ html{scroll-padding-top:118px}
 #idea-bags .workshop-slide-image{width:min(100%,280px);justify-self:center;align-self:center;contain:none;aspect-ratio:10 / 11;min-height:0;border-radius:18% 18% 10% 10%;background:#fff9f0}
 #idea-bags .workshop-slide-image .workshop-cutout{inset:0;width:100%;height:100%;object-fit:contain;object-position:center}
 @media(max-width:767px){#idea-bags .workshop-slide-image{width:min(100%,260px)}}
+
+/* Share one responsive grid cell so every slide uses the tallest content size. */
+.workshop-carousel.is-ready .arch-card{grid-area:1 / 1;align-self:stretch}
+.workshop-carousel.is-ready .arch-card[hidden]{display:grid;visibility:hidden;pointer-events:none}
+.workshop-carousel :is(#idea-coasters,#idea-charms,#idea-daily,#idea-bags) .workshop-slide-image{width:min(100%,280px);aspect-ratio:1}
+@media(max-width:767px){
+.workshop-carousel.is-ready .arch-card{grid-template-rows:1fr auto}
+.workshop-carousel :is(#idea-coasters,#idea-charms,#idea-daily,#idea-bags) .workshop-slide-image{width:min(100%,260px)}
+}

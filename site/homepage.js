@@ -27,6 +27,7 @@
     dots.forEach((dot, i) => dot.setAttribute('aria-pressed', String(i === current)));
     status.textContent = `${current + 1} of ${slides.length}: ${slides[current].querySelector('h3').textContent}`;
   };
+  carousel.classList.add('is-ready');
   controls.hidden = false;
   show(0);
   dots.forEach(dot => dot.addEventListener('click', () => { show(Number(dot.dataset.slide)); }));
