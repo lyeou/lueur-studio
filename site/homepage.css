@@ -350,3 +350,8 @@ html{scroll-padding-top:118px}
 #idea-coasters .workshop-slide-image{width:min(100%,280px);justify-self:center;align-self:center;contain:none;aspect-ratio:1;background:#fff9f0;border-radius:12%}
 #idea-coasters .workshop-slide-image .workshop-cutout{inset:0;width:100%;height:100%;object-fit:contain;object-position:center}
 @media(max-width:767px){#idea-coasters .workshop-slide-image{width:min(100%,260px)}}
+
+/* Round frame echoes the scrunchie; keep the complete original illustration centered. */
+#idea-daily .workshop-slide-image{width:min(100%,280px);justify-self:center;align-self:center;contain:none;aspect-ratio:1;min-height:0;border-radius:50%;background:#fff9f0}
+#idea-daily .workshop-slide-image .workshop-cutout{inset:0;width:100%;height:100%;object-fit:contain;object-position:center}
+@media(max-width:767px){#idea-daily .workshop-slide-image{width:min(100%,260px)}}
