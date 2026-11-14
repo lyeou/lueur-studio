@@ -405,3 +405,8 @@ html{scroll-padding-top:118px}
 .workshop-carousel #idea-charms{background:#e78a3a;color:#453127}
 #idea-charms .workshop-slide-image{border-color:#f2b65f}
 #idea-charms .workshop-tag,#idea-charms .workshop-slide-cta{color:#453127}
+
+/* Softer warm brown echoes the site's editorial ink and cream palette. */
+.workshop-carousel #idea-coasters{background:#68452f}
+#idea-coasters .workshop-slide-image{background:#a78262}
+#idea-coasters .workshop-tag,#idea-coasters .workshop-slide-cta{color:#68452f}
