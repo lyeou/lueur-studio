@@ -369,3 +369,7 @@ html{scroll-padding-top:118px}
 .workshop-carousel.is-ready .arch-card{grid-template-rows:1fr auto}
 .workshop-carousel :is(#idea-coasters,#idea-charms,#idea-daily,#idea-bags) .workshop-slide-image{width:min(100%,260px)}
 }
+
+/* Diamond outline, with upright artwork centered safely inside its points. */
+#idea-coasters .workshop-slide-image{border:0;border-radius:0;background:#a8c2ac;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+#idea-coasters .workshop-slide-image .workshop-cutout{inset:6px;width:calc(100% - 12px);height:calc(100% - 12px);padding:8%;box-sizing:border-box;background:#fff9f0;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
