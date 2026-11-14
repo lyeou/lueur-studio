@@ -380,3 +380,7 @@ html{scroll-padding-top:118px}
 /* Compensate for the rounded diamond mask's inset so its visible bounds match the other frames. */
 #idea-coasters .workshop-slide-image{transform:scale(1.18);transform-origin:center}
 #idea-coasters .workshop-slide-image .workshop-cutout{padding:4.7%}
+
+/* Owner-selected warm yellow-orange feature, with readable brown copy. */
+.workshop-carousel #idea-coasters{background:#e78a3a;color:#453127}
+#idea-coasters .workshop-tag,#idea-coasters .workshop-slide-cta{color:#453127}
