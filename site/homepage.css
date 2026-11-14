@@ -384,3 +384,6 @@ html{scroll-padding-top:118px}
 /* Owner-selected warm yellow-orange feature, with readable brown copy. */
 .workshop-carousel #idea-coasters{background:#e78a3a;color:#453127}
 #idea-coasters .workshop-tag,#idea-coasters .workshop-slide-cta{color:#453127}
+
+/* A lighter warm-yellow rim complements the owner-selected Coasters background. */
+#idea-coasters .workshop-slide-image{background:#f2b65f}
