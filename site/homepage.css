@@ -378,5 +378,5 @@ html{scroll-padding-top:118px}
 #idea-coasters .workshop-slide-image,#idea-coasters .workshop-slide-image .workshop-cutout{clip-path:none;-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cpath%20d%3D%22M56%206L94%2044Q100%2050%2094%2056L56%2094Q50%20100%2044%2094L6%2056Q0%2050%206%2044L44%206Q50%200%2056%206Z%22%2F%3E%3C%2Fsvg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cpath%20d%3D%22M56%206L94%2044Q100%2050%2094%2056L56%2094Q50%20100%2044%2094L6%2056Q0%2050%206%2044L44%206Q50%200%2056%206Z%22%2F%3E%3C%2Fsvg%3E");-webkit-mask-size:100% 100%;mask-size:100% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}
 
 /* Compensate for the rounded diamond mask's inset so its visible bounds match the other frames. */
-#idea-coasters .workshop-slide-image{transform:scale(1.065);transform-origin:center}
-#idea-coasters .workshop-slide-image .workshop-cutout{padding:0}
+#idea-coasters .workshop-slide-image{transform:scale(1.18);transform-origin:center}
+#idea-coasters .workshop-slide-image .workshop-cutout{padding:4.7%}
