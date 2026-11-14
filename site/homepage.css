@@ -337,6 +337,11 @@ html{scroll-padding-top:118px}
 .about-page #shop p,.about-page #story p{margin-left:auto}
 .about-page #shop .status{justify-self:end}
 
+/* Give the portrait charm illustration a balanced, centered frame. */
+#idea-charms .workshop-slide-image{width:min(100%,280px);justify-self:center;align-self:center;contain:none;aspect-ratio:1;min-height:0;background:#fff9f0}
+#idea-charms .workshop-slide-image .workshop-cutout{inset:16px;width:calc(100% - 32px);height:calc(100% - 32px);object-fit:contain;object-position:center}
+@media(max-width:767px){#idea-charms .workshop-slide-image{width:min(100%,260px)}}
+
 .next-page #next>h1{font-size:clamp(40px,5vw,64px);line-height:1.15;letter-spacing:-1px}
 .next-page .next-list h2{font-size:27px;line-height:1.25;letter-spacing:-.5px;margin-bottom:12px}
 @media(max-width:767px){.next-page .next-list h2{font-size:25px;margin-bottom:0}}
