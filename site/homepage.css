@@ -392,3 +392,8 @@ html{scroll-padding-top:118px}
 .workshop-carousel #idea-charms{background:#371c09}
 #idea-charms .workshop-slide-image{border-color:#8b6548}
 #idea-charms .workshop-tag,#idea-charms .workshop-slide-cta{color:#371c09}
+
+/* Soft yellow-green Scrunchies palette with dark readable copy. */
+.workshop-carousel #idea-daily{background:#cfd098;color:#49352c}
+#idea-daily .workshop-slide-image{border-color:#e1e2b9}
+#idea-daily .workshop-tag,#idea-daily .workshop-slide-cta{color:#49352c}
