@@ -397,3 +397,11 @@ html{scroll-padding-top:118px}
 .workshop-carousel #idea-daily{background:#cfd098;color:#49352c}
 #idea-daily .workshop-slide-image{border-color:#e1e2b9}
 #idea-daily .workshop-tag,#idea-daily .workshop-slide-cta{color:#49352c}
+
+/* Exchange the owner-selected Coasters and Fabric Charms palettes. */
+.workshop-carousel #idea-coasters{background:#371c09;color:#f6f0e5}
+#idea-coasters .workshop-slide-image{background:#8b6548}
+#idea-coasters .workshop-tag,#idea-coasters .workshop-slide-cta{color:#371c09}
+.workshop-carousel #idea-charms{background:#e78a3a;color:#453127}
+#idea-charms .workshop-slide-image{border-color:#f2b65f}
+#idea-charms .workshop-tag,#idea-charms .workshop-slide-cta{color:#453127}
