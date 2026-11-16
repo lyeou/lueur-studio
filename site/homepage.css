@@ -410,3 +410,16 @@ html{scroll-padding-top:118px}
 .workshop-carousel #idea-coasters{background:#68452f}
 #idea-coasters .workshop-slide-image{background:#a78262}
 #idea-coasters .workshop-tag,#idea-coasters .workshop-slide-cta{color:#68452f}
+
+/* Shop DIY kit categories use the same cream, brown and editorial type system. */
+.shop-diy-kits{width:calc(100% - 48px);max-width:1120px;margin:0 auto;padding:64px 0 80px;border-top:1px solid var(--line);text-align:center}
+.shop-diy-kits h2{font:italic clamp(36px,4vw,48px)/1.15 Georgia,serif;margin:16px 0 24px;color:var(--ink)}
+.diy-kits-intro{max-width:58ch;margin:0 auto 40px;font-size:18px;line-height:1.7}
+.diy-kit-categories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;text-align:left}
+.diy-kit-category{padding:28px 24px;background:var(--paper);border-top:1px solid var(--line);min-width:0}
+.diy-kit-status{font:600 12px/1.5 Arial,sans-serif;letter-spacing:1.3px;text-transform:uppercase;color:var(--ink);margin:0 0 20px}
+.diy-kit-category h3{font:italic 30px/1.2 Georgia,serif;margin:0 0 18px;color:var(--ink)}
+.diy-kit-category p:not(.diy-kit-status){font-size:16px;line-height:1.7;margin:0 0 16px}
+.diy-kit-category .diy-kit-details{margin-bottom:0;color:var(--ink)}
+.diy-kits-notice{font-size:16px;line-height:1.7;margin:32px auto 0;max-width:65ch}
+@media(max-width:767px){.shop-diy-kits{padding:40px 0 48px}.diy-kit-categories{grid-template-columns:1fr;gap:20px}.diy-kits-intro{font-size:16px;margin-bottom:28px}.diy-kit-category{padding:24px}.shop-diy-kits h2{font-size:36px}}
